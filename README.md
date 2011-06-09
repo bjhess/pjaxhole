@@ -30,7 +30,6 @@ Maybe Rails will come up with a better syntax yet...
 1. ENJOY! the Pjax jquery plugin source
 2. BATHE IN! the Pjaxhole implementation
 3. LOOK AT WITH YOUR EYES! Pjaxhole in its full glory
-4. SMATTER! questions and discussion
 
 ### Credits
 
