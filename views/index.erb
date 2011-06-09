@@ -1,0 +1,15 @@
+<%# PJAXHERE %>
+<title>Pjaxhole<%= " :: #{@title}" if @title %></title>
+
+<% current_annoyance = @annoyance || random_annoyance %>
+<% next_annoyance = random_annoyance(:excluded_annoyance => current_annoyance) %>
+
+<p class="annoyance">
+  <%= html_for(current_annoyance) %>
+</p>
+
+<p>
+  <%= random_intro %> 
+  <%# PJAXHERE - UNOBTRUSIVE %>
+  <a href="/<%= next_annoyance['name'] %>"><%= pretty_name_for(next_annoyance).downcase %></a>!
+</p>
